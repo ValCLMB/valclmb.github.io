@@ -66,7 +66,7 @@
     &:hover  {
       width: calc(100% - 65px);
       &+.menu__card__validate  {
-        width: 65px;
+        min-width: 65px;
         i{
           opacity: 1;
           transform:  translateX(0)  ;
