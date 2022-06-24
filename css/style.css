@@ -117,15 +117,16 @@
   border-radius: 0 0 15px 15px;
   padding: 20px;
 }
-.restaurant__card__info p {
+.restaurant__card__info h4 {
   margin: 0;
   font-size: 18px;
 }
-.restaurant__card__info p:nth-child(2) {
+.restaurant__card__info p {
+  margin: 0;
   font-weight: 300;
   font-size: 16px;
 }
-.restaurant__card--new::before {
+.restaurant--new::before {
   position: absolute;
   content: "Nouveau";
   right: 20px;
@@ -279,7 +280,7 @@
   width: 10px;
   height: 100px;
   background-color: black;
-  animation: loading-stop 2s forwards, loading 0.5s alternate 2s both 5;
+  animation: loading-stop 3s forwards, loading 0.5s alternate 3s both 5;
 }
 .loading__bar--1 {
   margin-left: 20px;
@@ -424,7 +425,7 @@ h3 {
 }
 
 .main {
-  animation: main-in 1s 2s both;
+  animation: main-in 1s 3s both;
 }
 
 @keyframes main-in {

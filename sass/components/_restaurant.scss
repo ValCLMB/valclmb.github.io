@@ -21,30 +21,34 @@
       border-radius: 0 0 15px 15px;
       padding: 20px;
 
-      p {
+      h4 {
         margin: 0;
         font-size: 18px;
-
-        &:nth-child(2) {
-          font-weight: 300;
-          font-size: 16px;
-        }
       }
+      p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+      }
+
 
     }
-    &--new {
-      &::before {
-        position: absolute;
-        content: "Nouveau";
-        right: 20px;
-        top: 20px;
-        font-size: 12px;
-        padding: 5px 10px;
-        border-radius: 2px;
-        color: darken($color-tertiary, 40%);
-        background-color: $color-tertiary;
 
-      }
+  }
+
+  &--new {
+    &::before {
+      position: absolute;
+      content: "Nouveau";
+      right: 20px;
+      top: 20px;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 2px;
+      color: darken($color-tertiary, 40%);
+      background-color: $color-tertiary;
+
     }
   }
 }
+
