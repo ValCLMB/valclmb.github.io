@@ -194,10 +194,11 @@
   animation-delay: 2s;
 }
 .menu__card__cont {
-  width: 100%;
+  box-sizing: border-box;
   padding: 10px;
   border-radius: 15px 0 0 15px;
   transition: width 0.4s;
+  width: 100%;
 }
 .menu__card__cont p { /*Title*/
   margin: 0;
@@ -219,13 +220,17 @@
   padding-right: 10px;
 }
 .menu__card__cont__infos div {
-  margin-right: 15px;
+  transform: translateX(-15px);
+  transition: transform 0.1s;
 }
 .menu__card__cont:hover {
   width: calc(100% - 65px);
 }
+.menu__card__cont:hover div {
+  transform: translateX(0);
+}
 .menu__card__cont:hover + .menu__card__validate {
-  min-width: 65px;
+  width: 65px;
 }
 .menu__card__cont:hover + .menu__card__validate i {
   opacity: 1;
@@ -239,7 +244,7 @@
   border-radius: 0 15px 15px 0;
   transform-origin: right;
   width: 0;
-  transition: width 0.4s;
+  transition: width 0.5s;
 }
 .menu__card__validate i {
   opacity: 0;
@@ -249,7 +254,7 @@
   border-radius: 50%;
   font-size: 16px;
   transform: translateX(10px) rotate(360deg);
-  transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.3s, transform 0.5s;
 }
 
 @keyframes shade-in {

@@ -32,10 +32,11 @@
   }
 
   &__cont {
-    width: 100%;
+    box-sizing: border-box;
     padding: 10px;
     border-radius: 15px 0 0 15px;
     transition: width .4s;
+    width: 100%;
     //SUB
     p { /*Title*/
       margin: 0;
@@ -58,15 +59,19 @@
       }
 
       div {
-        margin-right: 15px;
+        transform: translateX(-15px);
+        transition: transform .1s;
       }
 
       }
     //HOVER
     &:hover  {
       width: calc(100% - 65px);
+      div{
+        transform: translateX(0);
+      }
       &+.menu__card__validate  {
-        min-width: 65px;
+        width: 65px;
         i{
           opacity: 1;
           transform:  translateX(0)  ;
@@ -85,7 +90,7 @@
       border-radius: 0 15px 15px 0;
       transform-origin: right;
       width: 0;
-      transition: width .4s ;
+      transition: width .5s ;
       i {
         opacity: 0;
         color: $color-tertiary;
@@ -94,7 +99,7 @@
         border-radius: 50%;
         font-size: 16px;
         transform: translateX(10px) rotate(360deg);
-        transition: opacity .3s, transform .4s;
+        transition: opacity .3s, transform .5s;
       }
     }
   }
@@ -108,4 +113,3 @@
   }
 }
 
-//min-width:60px;
