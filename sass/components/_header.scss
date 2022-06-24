@@ -1,0 +1,18 @@
+.header{
+  position: relative;
+  font-family: $font-title;
+  padding: 10px;
+  box-shadow: grey 0 0 10px;
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+  i{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    font-size: 20px;
+    transform: translateY(-50%);
+
+  }
+}
