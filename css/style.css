@@ -220,10 +220,14 @@
   padding-right: 10px;
 }
 .menu__card__cont__infos div {
-  margin-right: 15px;
+  transform: translateX(-15px);
+  transition: transform 0.1s;
 }
 .menu__card__cont:hover {
   width: calc(100% - 65px);
+}
+.menu__card__cont:hover div {
+  transform: translateX(0);
 }
 .menu__card__cont:hover + .menu__card__validate {
   width: 65px;
@@ -275,7 +279,7 @@
   width: 10px;
   height: 100px;
   background-color: black;
-  animation: loading-stop 3s forwards, loading 0.5s alternate 3s both 5;
+  animation: loading-stop 2s forwards, loading 0.5s alternate 2s both 5;
 }
 .loading__bar--1 {
   margin-left: 20px;
@@ -420,7 +424,7 @@ h3 {
 }
 
 .main {
-  animation: main-in 1s 3s both;
+  animation: main-in 1s 2s both;
 }
 
 @keyframes main-in {

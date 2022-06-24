@@ -59,13 +59,17 @@
       }
 
       div {
-        margin-right: 15px;
+        transform: translateX(-15px);
+        transition: transform .1s;
       }
 
       }
     //HOVER
     &:hover  {
       width: calc(100% - 65px);
+      div{
+        transform: translateX(0);
+      }
       &+.menu__card__validate  {
         width: 65px;
         i{
