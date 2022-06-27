@@ -3,26 +3,25 @@
   &__card {
     position: relative;
     background-color: $color-bg;
-    padding: 70px 100px;
-    margin: 50px 0 50px 50px;
+    padding: 25px 30px;
+    margin: 10px 0 20px 10px;
     box-shadow: $box-shad-content;
-    border-radius: 60px;
-    font-size: 45px;
+    border-radius: 20px;
     i {
       color: grey;
-      margin-right: 50px;
-      font-size: 45px;
+      font-size: 18px;
+      margin-right: 20px;
     }
     &__index {
       position: absolute;
       background-color: $color-primary;
       color: white;
-      padding: 11px 22px;
-      border-radius: 50%;
-      left: -25px;
+      padding: 3px 8px;
+      border-radius: 25px;
+      left: -13px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 40px;
+      font-size: 15px;
     }
     &--active {
       background-color: lighten($color-primary,35%);

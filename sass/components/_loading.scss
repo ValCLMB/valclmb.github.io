@@ -4,19 +4,18 @@
   left: 50%;
   top: 40%;
   transform: translate(50%, 50%);
-  margin-left: -260px;
+  margin-left: -80px;
 
   &__bar {
     position: absolute;
     content: "";
-    width: 45px;
-    height: 500px;
+    width: 10px;
+    height: 100px;
     background-color: black;
-    transform-origin: bottom;
     animation: loading-stop $loading-time forwards, loading .5s alternate $loading-time both 5;
     @for $i from 1 through $num-loading {
       &--#{$i} {
-        margin-left: ($i * 80 + px);
+        margin-left: ($i * 20 + px);
         animation-delay: .2s * $i;
         @if $i % 3 == 0 {
           background-color: $color-secondary;
@@ -32,10 +31,10 @@
 
 @keyframes loading {
   0% {
-    transform: scaleY(1) ;
+    transform: scaleY(1) translateY(0);
   }
   100% {
-    transform: scaleY(0.5) ;
+    transform: scaleY(0.5) translateY(30px);
   }
 }
 
