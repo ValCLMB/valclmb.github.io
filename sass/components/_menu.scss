@@ -22,6 +22,8 @@
   box-shadow: $box-shad-content;
   margin: 15px 0 30px;
   border-radius: 40px;
+  z-index: 1;
+  overflow: hidden;
   animation: shade-in .4s both;
   // Display animation
   @for $i from 1 through $num-cards {
@@ -92,6 +94,7 @@
       border-radius: 0 40px 40px 0;
       transform-origin: right;
       width: 0;
+      z-index: -1;
       transition: width .3s ;
       i {
         visibility: hidden;
@@ -124,4 +127,3 @@
   }
 
 }
-

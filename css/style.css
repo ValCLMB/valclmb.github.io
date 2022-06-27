@@ -167,6 +167,8 @@
   box-shadow: #cbcbcb 0 8px 30px;
   margin: 15px 0 30px;
   border-radius: 40px;
+  z-index: 1;
+  overflow: hidden;
   animation: shade-in 0.4s both;
 }
 .menu__card--1 {
@@ -254,6 +256,7 @@
   border-radius: 0 40px 40px 0;
   transform-origin: right;
   width: 0;
+  z-index: -1;
   transition: width 0.3s;
 }
 .menu__card__validate i {
@@ -289,53 +292,54 @@
   left: 50%;
   top: 40%;
   transform: translate(50%, 50%);
-  margin-left: -80px;
+  margin-left: -260px;
 }
 .loading__bar {
   position: absolute;
   content: "";
-  width: 10px;
-  height: 100px;
+  width: 45px;
+  height: 500px;
   background-color: black;
-  animation: loading-stop 3s forwards, loading 0.5s alternate 3s both 5;
+  transform-origin: bottom;
+  animation: loading-stop 2s forwards, loading 0.5s alternate 2s both 5;
 }
 .loading__bar--1 {
-  margin-left: 20px;
+  margin-left: 80px;
   animation-delay: 0.2s;
   background-color: #9356DC;
 }
 .loading__bar--2 {
-  margin-left: 40px;
+  margin-left: 160px;
   animation-delay: 0.4s;
   background-color: #99E2D0;
 }
 .loading__bar--3 {
-  margin-left: 60px;
+  margin-left: 240px;
   animation-delay: 0.6s;
   background-color: #FF79DA;
 }
 .loading__bar--4 {
-  margin-left: 80px;
+  margin-left: 320px;
   animation-delay: 0.8s;
   background-color: #99E2D0;
 }
 .loading__bar--5 {
-  margin-left: 100px;
+  margin-left: 400px;
   animation-delay: 1s;
   background-color: #9356DC;
 }
 .loading__bar--6 {
-  margin-left: 120px;
+  margin-left: 480px;
   animation-delay: 1.2s;
   background-color: #FF79DA;
 }
 
 @keyframes loading {
   0% {
-    transform: scaleY(1) translateY(0);
+    transform: scaleY(1);
   }
   100% {
-    transform: scaleY(0.5) translateY(30px);
+    transform: scaleY(0.5);
   }
 }
 @keyframes loading-stop {
@@ -446,7 +450,7 @@ h3 {
 }
 
 .main {
-  animation: main-in 1s 3s both;
+  animation: main-in 1s 2s both;
 }
 
 @keyframes main-in {
