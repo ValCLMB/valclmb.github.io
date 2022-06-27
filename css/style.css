@@ -73,12 +73,12 @@
   margin: 50px 0 50px 50px;
   box-shadow: #cbcbcb 0 8px 30px;
   border-radius: 60px;
-  font-size: 40px;
+  font-size: 35px;
 }
 .functioning__card i {
   color: grey;
   margin-right: 50px;
-  font-size: 45px;
+  font-size: 35px;
 }
 .functioning__card__index {
   position: absolute;
