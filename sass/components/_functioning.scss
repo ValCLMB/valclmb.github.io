@@ -3,15 +3,15 @@
   &__card {
     position: relative;
     background-color: $color-bg;
-    padding: 70px 100px;
+    padding: 70px 50px 70px 100px;
     margin: 50px 0 50px 50px;
     box-shadow: $box-shad-content;
     border-radius: 60px;
-    font-size: 35px;
+    font-size: 20px;
     i {
       color: grey;
-      margin-right: 50px;
-      font-size: 35px;
+      margin-right: 60px;
+      font-size: 20px;
     }
     &__index {
       position: absolute;
