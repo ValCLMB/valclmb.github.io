@@ -9,7 +9,8 @@
 
     &__img { /*Temporary*/
       height: 200px;
-      background-color: grey;
+      width: 100%;
+      object-fit: cover;
       border-radius: 15px 15px 0 0;
     }
 
@@ -20,7 +21,7 @@
       background-color: white;
       border-radius: 0 0 15px 15px;
       padding: 20px;
-
+      margin-top: -5px;
       h4 {
         margin: 0;
         font-size: 18px;
