@@ -16,12 +16,11 @@ a {
   color: inherit;
 }
 h3 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 65px;
 }
 
 .content--padding {
-  padding: 20px 20px 50px;
+  padding: 30px 50px 100px;
   &--soft {
     padding: 20px 20px 10px 20px;
   }
@@ -30,8 +29,9 @@ h3 {
 // heart animation hover
 .fa-heart {
   position: relative;
-  font-size: 25px;
+  font-size: 55px;
   transition: color .2s;
+  margin-right: 20px;
   &.fa-solid{
     position: absolute;
     inset: 0;
@@ -52,30 +52,29 @@ h3 {
 
 // Location
 .location {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e5e5e5;
-
+  font-size: 40px;
   p {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 
 // Description
 .description {
   background-color: $color-bg;
-  padding: 50px;
+  padding: 100px;
   text-align: center;
-
   h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 65px;
   }
-
   p {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 45px;
   }
 }
 

@@ -3,10 +3,13 @@
   font-family: "Shrikhand", cursive;
   padding: 10px;
   box-shadow: grey 0 0 10px;
+  z-index: 5;
 }
 .header h1 {
+  font-size: 80px;
   text-align: center;
   margin: 0;
+  font-weight: lighter;
 }
 .header i {
   position: absolute;
@@ -20,16 +23,17 @@
   background-color: #414141;
   color: white;
   font-size: 17px;
-  padding: 20px;
+  padding: 50px 70px;
 }
 .footer__title {
   margin: 0;
-  font-size: 20px;
+  font-size: 40px;
   font-family: "Shrikhand", cursive;
 }
 .footer__list {
   list-style-type: none;
   padding: 0;
+  font-size: 35px;
 }
 .footer__list__item {
   margin: 10px 0;
@@ -39,23 +43,21 @@
 }
 .footer__list i {
   width: 15px;
-  font-size: 15px;
   height: fit-content;
-  padding-right: 15px;
+  padding-right: 50px;
 }
 
 .btn {
   display: block;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
-  font-weight: 600;
   border: none;
-  border-radius: 25px;
-  padding: 15px 0;
+  border-radius: 100px;
+  padding: 40px 0;
   margin: 10px auto;
-  width: 220px;
-  font-size: 15px;
-  box-shadow: #a6a6a6 0 3px 10px;
+  width: 550px;
+  font-size: 40px;
+  box-shadow: #a6a6a6 0 10px 20px;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -67,26 +69,27 @@
 .functioning__card {
   position: relative;
   background-color: #efefef;
-  padding: 25px 30px;
-  margin: 10px 0 20px 10px;
-  box-shadow: #dadada 0 5px 10px;
-  border-radius: 20px;
+  padding: 70px 100px;
+  margin: 50px 0 50px 50px;
+  box-shadow: #cbcbcb 0 8px 30px;
+  border-radius: 60px;
+  font-size: 45px;
 }
 .functioning__card i {
   color: grey;
-  font-size: 18px;
-  margin-right: 20px;
+  margin-right: 50px;
+  font-size: 45px;
 }
 .functioning__card__index {
   position: absolute;
   background-color: #9356DC;
   color: white;
-  padding: 3px 8px;
-  border-radius: 25px;
-  left: -13px;
+  padding: 11px 22px;
+  border-radius: 50%;
+  left: -25px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 15px;
+  font-size: 40px;
 }
 .functioning__card--active {
   background-color: #f2eafb;
@@ -100,42 +103,43 @@
 }
 .restaurant__card {
   position: relative;
-  margin: 20px 0;
-  box-shadow: #dadada 0 5px 10px;
-  border-radius: 15px;
+  margin: 10px 0 50px 0;
+  box-shadow: #cbcbcb 0 8px 30px;
+  border-radius: 35px;
 }
 .restaurant__card__img { /*Temporary*/
-  height: 200px;
+  height: 450px;
   width: 100%;
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 35px 35px 0 0;
 }
 .restaurant__card__info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  border-radius: 0 0 15px 15px;
-  padding: 20px;
+  border-radius: 0 0 35px 35px;
+  padding: 35px;
   margin-top: -5px;
 }
 .restaurant__card__info h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 45px;
 }
 .restaurant__card__info p {
   margin: 0;
+  margin-top: 10px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 40px;
 }
-.restaurant--new::before {
+.restaurant__card--new::before {
   position: absolute;
   content: "Nouveau";
-  right: 20px;
-  top: 20px;
-  font-size: 12px;
-  padding: 5px 10px;
-  border-radius: 2px;
+  right: 30px;
+  top: 30px;
+  font-size: 30px;
+  padding: 15px 25px;
+  border-radius: 5px;
   color: #278870;
   background-color: #99E2D0;
 }
@@ -161,7 +165,7 @@
   justify-content: space-between;
   background-color: white;
   font-size: 18px;
-  box-shadow: #dadada 0 5px 10px;
+  box-shadow: #cbcbcb 0 8px 30px;
   margin: 15px 0;
   border-radius: 15px;
   animation: shade-in 0.4s both;
@@ -282,7 +286,7 @@
   width: 10px;
   height: 100px;
   background-color: black;
-  animation: loading-stop 3s forwards, loading 0.5s alternate 3s both 5;
+  animation: loading-stop 2s forwards, loading 0.5s alternate 2s both 5;
 }
 .loading__bar--1 {
   margin-left: 20px;
@@ -343,12 +347,11 @@ a {
 }
 
 h3 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 65px;
 }
 
 .content--padding {
-  padding: 20px 20px 50px;
+  padding: 30px 50px 100px;
 }
 .content--padding--soft {
   padding: 20px 20px 10px 20px;
@@ -356,8 +359,9 @@ h3 {
 
 .fa-heart {
   position: relative;
-  font-size: 25px;
+  font-size: 55px;
   transition: color 0.2s;
+  margin-right: 20px;
 }
 .fa-heart.fa-solid {
   position: absolute;
@@ -374,27 +378,29 @@ h3 {
 }
 
 .location {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e5e5e5;
+  font-size: 40px;
 }
 .location p {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .description {
   background-color: #efefef;
-  padding: 50px;
+  padding: 100px;
   text-align: center;
 }
 .description h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 65px;
 }
 .description p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 45px;
 }
 
 .detail {
@@ -432,7 +438,7 @@ h3 {
 }
 
 .main {
-  animation: main-in 1s 3s both;
+  animation: main-in 1s 2s both;
 }
 
 @keyframes main-in {
