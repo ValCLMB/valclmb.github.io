@@ -73,7 +73,7 @@
   margin: 50px 0 50px 50px;
   box-shadow: #cbcbcb 0 8px 30px;
   border-radius: 60px;
-  font-size: 40px;
+  font-size: 35px;
 }
 .functioning__card i {
   color: grey;
@@ -445,7 +445,7 @@ h3 {
 .detail__title h2 {
   font-family: "Shrikhand", cursive;
   font-weight: lighter;
-  font-size: 70px;
+  font-size: 65px;
   margin: 0;
 }
 
